@@ -1,0 +1,272 @@
+:root{
+    --fuenteHeading: 'PT Sans', Sans-serif;
+    --fuenteParrafos: 'Open Sans', Sans-serif;
+
+    --amarillo: #fdfe98;
+    --morado: #D9ACF5;  
+    --azul: #AAE3E2;
+    --rosado: #FFCEFE;
+    --claro: #FDEBED;
+    --oscuro: #A61F69;
+    --naranja: #f3a83f; 
+    --verde: #00bb2d;
+    --blanco: #ffffff;
+    --negro: #000000;
+    }
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    }
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+@media (min-width: 768px) {
+   body{
+    font-size: 1.8rem;
+    line-height: 2;
+   }
+ }
+body{
+    font-family: var(--fuenteParrafos);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    background-color: var(--blanco);
+    color: var(--oscuro);
+}
+
+
+/*Globales*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;         /*width: min(90%, 120rem) reemplazaria las dos primeras lineas*/
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    text-align: center;
+}
+
+ /* h1{
+    font-size: 4.8rem;
+    } */
+h2{
+    font-size: 4rem; 
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+/*Utilidades*/
+
+.no-margin{
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+/* .webp .header{
+  background-image: url(..//img/banner.webp);
+  
+}
+
+.no-webp .header{
+  background-image: url(..//img/banner.jpg);
+} */
+
+.logo{
+  background-color: (var(--blanco));
+  width: 15rem;
+}
+.header, h1{
+ font-size: 2.8rem;
+ border: none;
+}
+
+@media (min-width: 768px) {
+  .header{
+    line-height: 1;
+   }
+h1{
+  font-size: 3.8rem;
+}
+ }
+
+ @media (min-width: 768px) {
+  .header__contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+
+    }
+  }
+ 
+
+.header__texto{
+    text-align: center;
+    color: var(--oscuro);
+    margin: 3rem;
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+   .header__texto{
+    line-height: 1.2;
+    font-size: 2.5rem;
+   }
+ }
+
+ .header__ok{
+  max-width: 1.4rem;
+ }
+
+ .header__texto__enlace{
+    font-size: 2.8rem;
+    }
+
+  .header__envoltura{
+    padding: 3rem;
+    background-color: var(--morado);
+    border-radius: 8rem;
+    color: var(--blanco);
+    line-height: 1.1;
+    font-size: 1.8rem;
+    margin: 3rem -2rem 1rem -2rem;
+  }
+ @media (min-width: 768px) {
+  .header__envoltura{
+   
+  }
+  }
+
+  .logo__nombre{
+  background-color: var(--claro);
+  padding: 3rem;
+  color: var(--oscuro)
+  }
+
+  span{
+    text-transform: uppercase;
+    text-transform: bold;
+    font-weight: 700;
+    
+  }
+
+ .header__boton{
+  background-color: var(--azul);
+  display: block;
+  color: var(--negro);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-family: var(--fuenteHeading);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0 2rem 0;        /*separacion hacia abajo*/
+  border-radius: 5rem;
+  border: none;
+ }
+ .header__boton:hover{
+  cursor: pointer;}
+
+   .boton{
+    display: block;
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;        /*separacion hacia abajo*/
+    border-radius: .5rem;
+    border: none;
+
+  }
+
+  
+@media (min-width: 768px) {
+   .header__boton{
+    display: inline-block;      /*da al elemento el tamaño que requiere estrictamente en este caso lo hace pequeño*/
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+
+   
+.contenido-principal{
+  background-color: var(--claro);
+  text-align: justify;
+  padding-top: 1rem;
+  line-height: 1.8;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+   }
+.acerca__bold{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+   .contenido-principal__acerca{
+   
+   }
+
+   .contenido-principal_qs{
+    /* margin-top: 10rem; */
+   }
+
+   .contenido-principal__img-P{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 5rem;
+   
+   }
+   .contenido-principal__img-P__dra{
+    background-color: transparent;
+    border-radius: 10rem;
+   }
+
+
+   }
+   
+   .boton:hover{
+    cursor: pointer;}
+
+  .boton--primario{
+    background-color: var(--negro);
+  }
+
+  /*aprenderas*/
+  .aprender{
+    margin-top: 5rem;
+  }
+
+  .aprender_cont{
+    text-align: justify;
+  }
+
+     
+     .click{
+      color: var(--azul)
+     }
